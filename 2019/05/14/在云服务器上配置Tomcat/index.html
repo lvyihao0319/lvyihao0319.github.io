@@ -100,18 +100,18 @@
 
 
 
-  <meta name="description" content="本文将介绍如何去美化一个基于Next主题的博客！ 1. 基础设置1.1 设置站点名、作者昵称和站点描述打开根目录下的config.yml12345678# Sitetitle: Jacob&amp;apos;s Notessubtitle: Quick notesdescription: 胡编一通，乱写一气keywords: 胡编一通，乱写一气author: Jacoblanguage: zh-CNtim">
-<meta name="keywords" content="Next主题美化">
+  <meta name="description" content="本文将介绍如何在Linux云服务器上或者Linux本地服务器上部署Tomcat环境！ 1. 事先准备在部署之前，提前从官网上下载好对应的tomcat和jdk，jdk1.8之前的下载需要账号密码，在我的上一篇文章里有可以使用。 这里特别提醒一下：由于是在linux系统上部署，tomcat需要下载以.tar.gz结尾的压缩包，可以为后续节省很多麻烦，jdk则要下载Linux64位的。 我使用的是apa">
+<meta name="keywords" content="Linux云服务器 tomcat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于Hexo-Next主题博客的美化">
-<meta property="og:url" content="http://yoursite.com/2019/05/14/基于Hexo-Next主题博客的美化/index.html">
+<meta property="og:title" content="在Linux云服务器上配置Tomcat">
+<meta property="og:url" content="http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/index.html">
 <meta property="og:site_name" content="Jacob&#39;s Notes">
-<meta property="og:description" content="本文将介绍如何去美化一个基于Next主题的博客！ 1. 基础设置1.1 设置站点名、作者昵称和站点描述打开根目录下的config.yml12345678# Sitetitle: Jacob&amp;apos;s Notessubtitle: Quick notesdescription: 胡编一通，乱写一气keywords: 胡编一通，乱写一气author: Jacoblanguage: zh-CNtim">
+<meta property="og:description" content="本文将介绍如何在Linux云服务器上或者Linux本地服务器上部署Tomcat环境！ 1. 事先准备在部署之前，提前从官网上下载好对应的tomcat和jdk，jdk1.8之前的下载需要账号密码，在我的上一篇文章里有可以使用。 这里特别提醒一下：由于是在linux系统上部署，tomcat需要下载以.tar.gz结尾的压缩包，可以为后续节省很多麻烦，jdk则要下载Linux64位的。 我使用的是apa">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-14T10:48:20.430Z">
+<meta property="og:updated_time" content="2019-05-14T15:12:33.961Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基于Hexo-Next主题博客的美化">
-<meta name="twitter:description" content="本文将介绍如何去美化一个基于Next主题的博客！ 1. 基础设置1.1 设置站点名、作者昵称和站点描述打开根目录下的config.yml12345678# Sitetitle: Jacob&amp;apos;s Notessubtitle: Quick notesdescription: 胡编一通，乱写一气keywords: 胡编一通，乱写一气author: Jacoblanguage: zh-CNtim">
+<meta name="twitter:title" content="在Linux云服务器上配置Tomcat">
+<meta name="twitter:description" content="本文将介绍如何在Linux云服务器上或者Linux本地服务器上部署Tomcat环境！ 1. 事先准备在部署之前，提前从官网上下载好对应的tomcat和jdk，jdk1.8之前的下载需要账号密码，在我的上一篇文章里有可以使用。 这里特别提醒一下：由于是在linux系统上部署，tomcat需要下载以.tar.gz结尾的压缩包，可以为后续节省很多麻烦，jdk则要下载Linux64位的。 我使用的是apa">
 
 
 
@@ -121,7 +121,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/05/14/基于Hexo-Next主题博客的美化/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/">
 
 
 
@@ -131,7 +131,7 @@
   };
 </script>
 
-  <title>基于Hexo-Next主题博客的美化 | Jacob's Notes</title>
+  <title>在Linux云服务器上配置Tomcat | Jacob's Notes</title>
   
 
 
@@ -363,7 +363,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/基于Hexo-Next主题博客的美化/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jacob">
@@ -380,7 +380,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">基于Hexo-Next主题博客的美化
+          <h1 class="post-title" itemprop="name headline">在Linux云服务器上配置Tomcat
 
               
             
@@ -406,7 +406,7 @@
                 
               
 
-              <time title="创建时间：2019-05-14 16:39:00 / 修改时间：18:48:20" itemprop="dateCreated datePublished" datetime="2019-05-14T16:39:00+08:00">2019-05-14</time>
+              <time title="创建时间：2019-05-14 22:00:29 / 修改时间：23:12:33" itemprop="dateCreated datePublished" datetime="2019-05-14T22:00:29+08:00">2019-05-14</time>
             
 
             
@@ -470,36 +470,27 @@
       
 
       
-        <p>本文将介绍如何去美化一个基于Next主题的博客！</p>
-<h1 id="1-基础设置"><a href="#1-基础设置" class="headerlink" title="1. 基础设置"></a>1. 基础设置</h1><h3 id="1-1-设置站点名、作者昵称和站点描述"><a href="#1-1-设置站点名、作者昵称和站点描述" class="headerlink" title="1.1 设置站点名、作者昵称和站点描述"></a>1.1 设置站点名、作者昵称和站点描述</h3><p>打开根目录下的<code>config.yml</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Jacob&apos;s Notes</span><br><span class="line">subtitle: Quick notes</span><br><span class="line">description: 胡编一通，乱写一气</span><br><span class="line">keywords: 胡编一通，乱写一气</span><br><span class="line">author: Jacob</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure></p>
-<h3 id="1-2-NexT主题的安装"><a href="#1-2-NexT主题的安装" class="headerlink" title="1.2 NexT主题的安装"></a>1.2 NexT主题的安装</h3><p>博客所在目录下打开：git bash<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
-<h3 id="1-3-启用主题"><a href="#1-3-启用主题" class="headerlink" title="1.3 启用主题"></a>1.3 启用主题</h3><p>打开根目录下的：_config.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure></p>
-<h1 id="2-主题设定"><a href="#2-主题设定" class="headerlink" title="2. 主题设定"></a>2. 主题设定</h1><h3 id="2-1-选择主题"><a href="#2-1-选择主题" class="headerlink" title="2.1 选择主题"></a>2.1 选择主题</h3><p>打开：themes/next/ 下的：_config.yml,查找<code>scheme</code>，可以看到如下四种不同的风格方案：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure></p>
-<h3 id="2-2-设置中文"><a href="#2-2-设置中文" class="headerlink" title="2.2 设置中文"></a>2.2 设置中文</h3><p>框架默认的语言是英文。前往根目录下的：_config.yml，查找<code>language</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">language: zh-CN</span><br></pre></td></tr></table></figure></p>
-<h3 id="2-3-设置菜单和对应的页面"><a href="#2-3-设置菜单和对应的页面" class="headerlink" title="2.3 设置菜单和对应的页面"></a>2.3 设置菜单和对应的页面</h3><p>打开：themes/next/ 下的：_config.yml，查找<code>menu</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure></p>
-<p><code>||</code>之前的值是目标链接，之后的是分类页面的图标<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;categories&quot;</span><br></pre></td></tr></table></figure></p>
-<p>此时在根目录的source文件夹下会生成一个categories文件，文件中有一个index.md文件，修改内容如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 文章分类</span><br><span class="line">date: 2017-12-14 13:05:38</span><br><span class="line">type: &quot;categories&quot;</span><br></pre></td></tr></table></figure></p>
-<h1 id="3-美化"><a href="#3-美化" class="headerlink" title="3. 美化"></a>3. 美化</h1><h3 id="3-1-设置头像"><a href="#3-1-设置头像" class="headerlink" title="3.1 设置头像"></a>3.1 设置头像</h3><p>打开：themes/next/下的：_config.yml，查找<code>avatar</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line"># in theme directory(source/images): /images/avatar.gif</span><br><span class="line"># in site  directory(source/uploads): /uploads/avatar.gif</span><br><span class="line">avatar: http://XXXXXXXXX</span><br></pre></td></tr></table></figure></p>
-<p>站点内地址：图放至themes/next/source/images/配置为：avatar: /images/图片名</p>
-<h3 id="3-2-背景动画"><a href="#3-2-背景动画" class="headerlink" title="3.2 背景动画"></a>3.2 背景动画</h3><p>进入theme/next目录，执行命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest</span><br></pre></td></tr></table></figure></p>
-<p>这时将配置文件_config.yml中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">canvas_nest: true</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-3-文章底部标签显示的优化"><a href="#3-3-文章底部标签显示的优化" class="headerlink" title="3.3 文章底部标签显示的优化"></a>3.3 文章底部标签显示的优化</h3><p>修改：/themes/next/layout/_macro/post.swig，搜索 <code>rel=”tag”&gt;#</code>，将 <code>#</code> 换成 <code><i class="fa fa-tag"></i></code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;code&gt;rel=&quot;tag&quot;&gt;&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt;&lt;/code&gt;</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-4-文章添加阴影、透明效果"><a href="#3-4-文章添加阴影、透明效果" class="headerlink" title="3.4 文章添加阴影、透明效果"></a>3.4 文章添加阴影、透明效果</h3><p>打开：theme/next/source/css/_custom/custom.styl，添加以下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 主页文章添加阴影效果</span><br><span class="line">.post &#123;</span><br><span class="line">   margin-top: 60px;</span><br><span class="line">   margin-bottom: 60px;</span><br><span class="line">   padding: 25px;</span><br><span class="line">   background:rgba(255,255,255,0.9) none repeat scroll !important;</span><br><span class="line">   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);</span><br><span class="line">   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-5-点击侧栏头像回到首页"><a href="#3-5-点击侧栏头像回到首页" class="headerlink" title="3.5 点击侧栏头像回到首页"></a>3.5 点击侧栏头像回到首页</h3><p>修改：/themes/next/layout/_macro/sidebar.swig，如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;/&quot;&gt;</span><br><span class="line">   &lt;img class=&quot;site-author-image&quot; itemprop=&quot;image&quot;</span><br><span class="line">       src=&quot;&#123;&#123; url_for( theme.avatar | default(theme.images + &apos;/avatar.gif&apos;) ) &#125;&#125;&quot;</span><br><span class="line">       alt=&quot;&#123;&#123; theme.author &#125;&#125;&quot; /&gt;</span><br><span class="line">&lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-6-新建文章时，在相同目录下创建同名文件夹（便于图片管理）"><a href="#3-6-新建文章时，在相同目录下创建同名文件夹（便于图片管理）" class="headerlink" title="3.6 新建文章时，在相同目录下创建同名文件夹（便于图片管理）"></a>3.6 新建文章时，在相同目录下创建同名文件夹（便于图片管理）</h3><p>打开站点配置文件：_config.yml，搜索<code>post_asset_folder</code>字段，设置其值为<code>true</code>,然后安装<code>hexo-asset-image</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-asset-image --save</span><br></pre></td></tr></table></figure></p>
-<p>此时<code>hexo new “fileName”</code>会在:/source/_posts目录下创建同名的文件夹<br>只需在 .md 文件里使用<code> ![title]括号（图片名）</code> ，无需路径名就可以插入图片。</p>
-<h3 id="3-7-首页显示文章摘要（阅读全文）"><a href="#3-7-首页显示文章摘要（阅读全文）" class="headerlink" title="3.7 首页显示文章摘要（阅读全文）"></a>3.7 首页显示文章摘要（阅读全文）</h3><p>打开:themes/next/下的:_config.yml，查找<code>excerpt</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">auto_excerpt: //自动摘录</span><br><span class="line">  enable: true</span><br><span class="line">  length: 150 //摘录字数</span><br><span class="line">read_more_btn: true //显示全文按钮</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-8-给页面添加背景图片"><a href="#3-8-给页面添加背景图片" class="headerlink" title="3.8 给页面添加背景图片"></a>3.8 给页面添加背景图片</h3><p>打开:theme/next/source/css/_custom/custom.styl，添加以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  /*background: url(/images/blogbk.jpg) no-repeat;*/</span><br><span class="line">  /* 背景图垂直、水平均居中 */</span><br><span class="line">  background-position: center center;</span><br><span class="line">  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */</span><br><span class="line">  background-attachment: fixed;</span><br><span class="line">  /* 让背景图基于容器大小伸缩 */</span><br><span class="line">  background-size: cover;</span><br><span class="line">  /* 设置背景颜色，背景图加载过程中会显示背景色 */</span><br><span class="line">  background-color: rgba(0, 0, 0, 0.5);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-9-文字背景以及半透明的设置"><a href="#3-9-文字背景以及半透明的设置" class="headerlink" title="3.9 文字背景以及半透明的设置"></a>3.9 文字背景以及半透明的设置</h3><p>打开:theme/next/source/css/_custom/custom.styl，添加以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.content &#123;</span><br><span class="line">	border-radius: 20px; //文章背景设置圆角</span><br><span class="line">	padding: 30px 60px 30px 60px;</span><br><span class="line">	background:rgba(255, 255, 255, 0.8) none repeat scroll !important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-10-去除NexT主题Markdown分割线渲染效果"><a href="#3-10-去除NexT主题Markdown分割线渲染效果" class="headerlink" title="3.10 去除NexT主题Markdown分割线渲染效果"></a>3.10 去除NexT主题Markdown分割线渲染效果</h3><p>修改:/source/css/_common/scaffolding/base.styl，注释或删除以下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">background-image: repeating-linear-gradient(</span><br><span class="line">    -45deg,</span><br><span class="line">    white,</span><br><span class="line">    white 4px,</span><br><span class="line">    transparent 4px,</span><br><span class="line">    transparent 8px</span><br><span class="line">  );</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-11-图片可点击放大查看，放大后可关闭"><a href="#3-11-图片可点击放大查看，放大后可关闭" class="headerlink" title="3.11 图片可点击放大查看，放大后可关闭"></a>3.11 图片可点击放大查看，放大后可关闭</h3><p>打开站点配置文件:_config.yml，搜索<code>fancybox</code>字段，设置其值为<code>true</code><br>进入到:theme/text/文件夹下，打开:git bash<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-12-博客总访问量统计"><a href="#3-12-博客总访问量统计" class="headerlink" title="3.12 博客总访问量统计"></a>3.12 博客总访问量统计</h3><p>打开themes/next/下的_config.yml，查找<code>busuanzi</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: true</span><br><span class="line">  total_visitors_icon: user</span><br><span class="line">  total_views: true</span><br><span class="line">  total_views_icon: eye</span><br><span class="line">  post_views: true</span><br><span class="line">  post_views_icon: eye</span><br></pre></td></tr></table></figure></p>
-<p>打开:/themes/next/layout/_partials/footer.swig，在最后添加如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;</span><br><span class="line">  本站访问次数：&lt;span class=&quot;busuanzi-value&quot; id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;&lt;/span&gt;</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-13-文章末尾添加版权声明"><a href="#3-13-文章末尾添加版权声明" class="headerlink" title="3.13 文章末尾添加版权声明"></a>3.13 文章末尾添加版权声明</h3><p>查找主题配置文件:themes/next/_config.yml中的<code>creative_commons</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: false</span><br><span class="line">  post: true  # 将false改为true即可显示版权信息</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-14-搜索功能"><a href="#3-14-搜索功能" class="headerlink" title="3.14 搜索功能"></a>3.14 搜索功能</h3><p>安装搜索插件： hexo-generator-searchdb<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></p>
-<p>安装完成，编辑博客配置文件：_config.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure></p>
-<p>Next 主题自带搜索设置，编辑主题配置文件：_config.yml,找到文件中 <code>Local search</code> 的相关配置，设为 <code>true</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure></p>
-<h1 id="4-hexo-重新部署"><a href="#4-hexo-重新部署" class="headerlink" title="4 hexo 重新部署"></a>4 hexo 重新部署</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+        <p>本文将介绍如何在Linux云服务器上或者Linux本地服务器上部署Tomcat环境！</p>
+<h2 id="1-事先准备"><a href="#1-事先准备" class="headerlink" title="1. 事先准备"></a>1. 事先准备</h2><p>在部署之前，提前从官网上下载好对应的tomcat和jdk，jdk1.8之前的下载需要账号密码，在我的上一篇文章里有可以使用。</p>
+<p>这里特别提醒一下：由于是在linux系统上部署，tomcat需要下载以<code>.tar.gz</code>结尾的压缩包，可以为后续节省很多麻烦，jdk则要下载Linux64位的。</p>
+<p>我使用的是<code>apache-tomcat-9.0.19</code>和<code>jdk-8u191-linux-x64.tar</code></p>
+<h2 id="2-将两个压缩包传入服务器中"><a href="#2-将两个压缩包传入服务器中" class="headerlink" title="2. 将两个压缩包传入服务器中"></a>2. 将两个压缩包传入服务器中</h2><p>本地可以下载一个叫做：SecureFX的软件来进行上传文件的操作，连接服务器并且上传压缩包至<code>/opt</code>目录下。</p>
+<h2 id="3-解压文件并删除压缩包"><a href="#3-解压文件并删除压缩包" class="headerlink" title="3. 解压文件并删除压缩包"></a>3. 解压文件并删除压缩包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /opt</span><br><span class="line">tar -zxvf apache-tomcat-9.0.19.tar.gz</span><br><span class="line">tar -zxvf jdk-8u191-linux-x64.tar.gz</span><br><span class="line">rm -rf *.tar.gz</span><br></pre></td></tr></table></figure>
+<h2 id="4-配置jdk"><a href="#4-配置jdk" class="headerlink" title="4. 配置jdk"></a>4. 配置jdk</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+<p>进入到最底下，补充以下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/opt/jdk1.8.0_191</span><br><span class="line">export JRE_HOME=/opt/jdk1.8.0_191/jre</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH</span><br><span class="line">export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH</span><br></pre></td></tr></table></figure>
+<p>再不重启服务器的情况下，让配置文件生效并查看安装的版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br><span class="line">java -version</span><br></pre></td></tr></table></figure>
+<h2 id="5-打开防火墙对应的端口号-并重新加载防火墙"><a href="#5-打开防火墙对应的端口号-并重新加载防火墙" class="headerlink" title="5. 打开防火墙对应的端口号,并重新加载防火墙"></a>5. 打开防火墙对应的端口号,并重新加载防火墙</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=80/tcp --permanent</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+<h2 id="6-建一个存放项目的文件夹"><a href="#6-建一个存放项目的文件夹" class="headerlink" title="6. 建一个存放项目的文件夹"></a>6. 建一个存放项目的文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt</span><br><span class="line">mkdir www</span><br></pre></td></tr></table></figure>
+<h2 id="7-配置tomcat启动路径"><a href="#7-配置tomcat启动路径" class="headerlink" title="7. 配置tomcat启动路径"></a>7. 配置tomcat启动路径</h2><p>将本地的项目上传到www目录之下，然后</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd apache-tomcat-9.0.19/conf</span><br><span class="line">vim server.xml</span><br></pre></td></tr></table></figure>
+<p>在<code>server.xml</code>中修改端口号<code>8080</code>成<code>80</code>并在最下面的<code></code>前面加入下面代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//以下是我的代码，你们需要自己对应修改</span><br><span class="line">&lt;Context docBase=&quot;/opt/www/h5projects/MHWZ/&quot; path=&quot;/mhwz&quot; reloadable=&quot;false&quot;&lt;/Context&gt;</span><br><span class="line">&lt;Context docBase=&quot;/opt/www/h5projects/ZCOOL/&quot; path=&quot;/zcool&quot; reloadable=&quot;false&quot;&gt;&lt;/Context&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="8-启动tomcat"><a href="#8-启动tomcat" class="headerlink" title="8. 启动tomcat"></a>8. 启动tomcat</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ../bin</span><br><span class="line">./startup.sh &amp;&amp; tail -f ../logs/catalina.out	//启动tomcat并查看日志</span><br></pre></td></tr></table></figure>
+<h2 id="9-运行项目"><a href="#9-运行项目" class="headerlink" title="9. 运行项目"></a>9. 运行项目</h2><p>因为端口设置成<code>80</code>所以直接在浏览器中输入ip/你设置的项目的虚拟路径/主页，就成功了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip/mhwz/mhwz.html</span><br></pre></td></tr></table></figure>
+<h2 id="10-附上一些常用代码"><a href="#10-附上一些常用代码" class="headerlink" title="10 .附上一些常用代码"></a>10 .附上一些常用代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep tomcat	//查询进程</span><br><span class="line">kill -9 1060	//彻底关闭tomcat，这个1060是查询出来的进程</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -533,7 +524,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="http://yoursite.com/2019/05/14/基于Hexo-Next主题博客的美化/" title="基于Hexo-Next主题博客的美化">http://yoursite.com/2019/05/14/基于Hexo-Next主题博客的美化/</a>
+    <a href="http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/" title="在Linux云服务器上配置Tomcat">http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -546,7 +537,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Next主题美化/" rel="tag"><i class="fa fa-tag"></i> Next主题美化</a>
+            <a href="/tags/Linux云服务器-tomcat/" rel="tag"><i class="fa fa-tag"></i> Linux云服务器 tomcat</a>
           
         </div>
       
@@ -559,8 +550,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/12/搭建一个简易博客/" rel="next" title="搭建一个简易博客">
-                <i class="fa fa-chevron-left"></i> 搭建一个简易博客
+              <a href="/2019/05/14/jdk下载账号/" rel="next" title="jdk下载账号">
+                <i class="fa fa-chevron-left"></i> jdk下载账号
               </a>
             
           </div>
@@ -568,10 +559,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/14/jdk下载账号/" rel="prev" title="jdk下载账号">
-                jdk下载账号 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -761,7 +748,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-基础设置"><span class="nav-text">1. 基础设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-设置站点名、作者昵称和站点描述"><span class="nav-text">1.1 设置站点名、作者昵称和站点描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-NexT主题的安装"><span class="nav-text">1.2 NexT主题的安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-启用主题"><span class="nav-text">1.3 启用主题</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#2-主题设定"><span class="nav-text">2. 主题设定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-选择主题"><span class="nav-text">2.1 选择主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-设置中文"><span class="nav-text">2.2 设置中文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-设置菜单和对应的页面"><span class="nav-text">2.3 设置菜单和对应的页面</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-美化"><span class="nav-text">3. 美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-设置头像"><span class="nav-text">3.1 设置头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-背景动画"><span class="nav-text">3.2 背景动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-文章底部标签显示的优化"><span class="nav-text">3.3 文章底部标签显示的优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-文章添加阴影、透明效果"><span class="nav-text">3.4 文章添加阴影、透明效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-点击侧栏头像回到首页"><span class="nav-text">3.5 点击侧栏头像回到首页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6-新建文章时，在相同目录下创建同名文件夹（便于图片管理）"><span class="nav-text">3.6 新建文章时，在相同目录下创建同名文件夹（便于图片管理）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-7-首页显示文章摘要（阅读全文）"><span class="nav-text">3.7 首页显示文章摘要（阅读全文）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-8-给页面添加背景图片"><span class="nav-text">3.8 给页面添加背景图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-9-文字背景以及半透明的设置"><span class="nav-text">3.9 文字背景以及半透明的设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-10-去除NexT主题Markdown分割线渲染效果"><span class="nav-text">3.10 去除NexT主题Markdown分割线渲染效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-11-图片可点击放大查看，放大后可关闭"><span class="nav-text">3.11 图片可点击放大查看，放大后可关闭</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-12-博客总访问量统计"><span class="nav-text">3.12 博客总访问量统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-13-文章末尾添加版权声明"><span class="nav-text">3.13 文章末尾添加版权声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-14-搜索功能"><span class="nav-text">3.14 搜索功能</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-hexo-重新部署"><span class="nav-text">4 hexo 重新部署</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-事先准备"><span class="nav-text">1. 事先准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-将两个压缩包传入服务器中"><span class="nav-text">2. 将两个压缩包传入服务器中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-解压文件并删除压缩包"><span class="nav-text">3. 解压文件并删除压缩包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-配置jdk"><span class="nav-text">4. 配置jdk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-打开防火墙对应的端口号-并重新加载防火墙"><span class="nav-text">5. 打开防火墙对应的端口号,并重新加载防火墙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-建一个存放项目的文件夹"><span class="nav-text">6. 建一个存放项目的文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-配置tomcat启动路径"><span class="nav-text">7. 配置tomcat启动路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-启动tomcat"><span class="nav-text">8. 启动tomcat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-运行项目"><span class="nav-text">9. 运行项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-附上一些常用代码"><span class="nav-text">10 .附上一些常用代码</span></a></li></ol></div>
             
 
           </div>

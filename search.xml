@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[在Linux云服务器上配置Tomcat]]></title>
+    <url>%2F2019%2F05%2F14%2F%E5%9C%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AETomcat%2F</url>
+    <content type="text"><![CDATA[本文将介绍如何在Linux云服务器上或者Linux本地服务器上部署Tomcat环境！ 1. 事先准备在部署之前，提前从官网上下载好对应的tomcat和jdk，jdk1.8之前的下载需要账号密码，在我的上一篇文章里有可以使用。 这里特别提醒一下：由于是在linux系统上部署，tomcat需要下载以.tar.gz结尾的压缩包，可以为后续节省很多麻烦，jdk则要下载Linux64位的。 我使用的是apache-tomcat-9.0.19和jdk-8u191-linux-x64.tar 2. 将两个压缩包传入服务器中本地可以下载一个叫做：SecureFX的软件来进行上传文件的操作，连接服务器并且上传压缩包至/opt目录下。 3. 解压文件并删除压缩包1234cd /opttar -zxvf apache-tomcat-9.0.19.tar.gztar -zxvf jdk-8u191-linux-x64.tar.gzrm -rf *.tar.gz 4. 配置jdk1vim /etc/profile 进入到最底下，补充以下代码： 1234export JAVA_HOME=/opt/jdk1.8.0_191export JRE_HOME=/opt/jdk1.8.0_191/jreexport CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATHexport PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH 再不重启服务器的情况下，让配置文件生效并查看安装的版本 12source /etc/profilejava -version 5. 打开防火墙对应的端口号,并重新加载防火墙12firewall-cmd --zone=public --add-port=80/tcp --permanentfirewall-cmd --reload 6. 建一个存放项目的文件夹12cd /optmkdir www 7. 配置tomcat启动路径将本地的项目上传到www目录之下，然后 12cd apache-tomcat-9.0.19/confvim server.xml 在server.xml中修改端口号8080成80并在最下面的前面加入下面代码 123//以下是我的代码，你们需要自己对应修改&lt;Context docBase=&quot;/opt/www/h5projects/MHWZ/&quot; path=&quot;/mhwz&quot; reloadable=&quot;false&quot;&lt;/Context&gt;&lt;Context docBase=&quot;/opt/www/h5projects/ZCOOL/&quot; path=&quot;/zcool&quot; reloadable=&quot;false&quot;&gt;&lt;/Context&gt; 8. 启动tomcat12cd ../bin./startup.sh &amp;&amp; tail -f ../logs/catalina.out //启动tomcat并查看日志 9. 运行项目因为端口设置成80所以直接在浏览器中输入ip/你设置的项目的虚拟路径/主页，就成功了。 1ip/mhwz/mhwz.html 10 .附上一些常用代码12ps -ef | grep tomcat //查询进程kill -9 1060 //彻底关闭tomcat，这个1060是查询出来的进程]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Linux云服务器 tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[jdk下载账号]]></title>
     <url>%2F2019%2F05%2F14%2Fjdk%E4%B8%8B%E8%BD%BD%E8%B4%A6%E5%8F%B7%2F</url>
     <content type="text"><![CDATA[目前在官网下载低于jdk1.8的java jdk的时候需要登陆，从网上收藏了这个账号可以下载用 122696671285@qq.com 密码：Oracle123]]></content>
