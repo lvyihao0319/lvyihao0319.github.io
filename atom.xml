@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-14T15:12:33.961Z</updated>
+  <updated>2019-05-14T16:27:47.752Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>安装本地的Linux的CentOS7</title>
+    <link href="http://yoursite.com/2019/05/15/%E5%AE%89%E8%A3%85%E6%9C%AC%E5%9C%B0%E7%9A%84Linux%E7%9A%84CentOS7/"/>
+    <id>http://yoursite.com/2019/05/15/安装本地的Linux的CentOS7/</id>
+    <published>2019-05-14T16:02:29.000Z</published>
+    <updated>2019-05-14T16:27:47.752Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-新建虚拟机"><a href="#1-新建虚拟机" class="headerlink" title="1. 新建虚拟机"></a>1. 新建虚拟机</h2><ol><li>按照默认提示下一步，到处理器的配置选择两个双核的</li><li>虚拟机的内存设置为：2048MB</li><li>使用NAT</li></ol><h2 id="2-安装系统"><a href="#2-安装系统" class="headerlink" title="2. 安装系统"></a>2. 安装系统</h2><ol><li>选择中文</li><li>到了-安装信息摘要-的地方，等一会儿</li><li>点击-软件选择-</li><li>选中-GNOME桌面-，-传统X Windows系统的兼容性-，-完成-</li><li>然后选择-安装位置-</li><li>选择-我要配置分区-</li><li>点击-完成-</li><li>点击-自动创建-</li><li>设置root密码</li><li>等待安装，并重启</li></ol><h2 id="3-设置ip地址"><a href="#3-设置ip地址" class="headerlink" title="3. 设置ip地址"></a>3. 设置ip地址</h2><p>打开终端</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/sysconfig/network-scripts</span><br><span class="line">ll|less</span><br><span class="line">su root</span><br><span class="line">vim ifcfg-ens33</span><br></pre></td></tr></table></figure><p>编辑ifcfg-ens33文件</p><p><img src="/2019/05/15/安装本地的Linux的CentOS7/ifcfg-ens33.png" alt="ifcfg-ens33"></p><h2 id="4-查看是否配置成功，并且ping一下外网"><a href="#4-查看是否配置成功，并且ping一下外网" class="headerlink" title="4. 查看是否配置成功，并且ping一下外网"></a>4. 查看是否配置成功，并且ping一下外网</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ifconfig</span><br><span class="line">ping www.baidu.com -c 3</span><br></pre></td></tr></table></figure><h2 id="5-windows-ping一下linux"><a href="#5-windows-ping一下linux" class="headerlink" title="5. windows ping一下linux"></a>5. windows ping一下linux</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping xxx.xxx.xx.xxx</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-新建虚拟机&quot;&gt;&lt;a href=&quot;#1-新建虚拟机&quot; class=&quot;headerlink&quot; title=&quot;1. 新建虚拟机&quot;&gt;&lt;/a&gt;1. 新建虚拟机&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;按照默认提示下一步，到处理器的配置选择两个双核的&lt;/li&gt;
+&lt;li&gt;虚拟机的内存设置
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>在Linux云服务器上配置Tomcat</title>
     <link href="http://yoursite.com/2019/05/14/%E5%9C%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AETomcat/"/>
     <id>http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/</id>
     <published>2019-05-14T14:00:29.000Z</published>
-    <updated>2019-05-14T15:12:33.961Z</updated>
+    <updated>2019-05-14T16:03:48.629Z</updated>
     
     <content type="html"><![CDATA[<p>本文将介绍如何在Linux云服务器上或者Linux本地服务器上部署Tomcat环境！</p><h2 id="1-事先准备"><a href="#1-事先准备" class="headerlink" title="1. 事先准备"></a>1. 事先准备</h2><p>在部署之前，提前从官网上下载好对应的tomcat和jdk，jdk1.8之前的下载需要账号密码，在我的上一篇文章里有可以使用。</p><p>这里特别提醒一下：由于是在linux系统上部署，tomcat需要下载以<code>.tar.gz</code>结尾的压缩包，可以为后续节省很多麻烦，jdk则要下载Linux64位的。</p><p>我使用的是<code>apache-tomcat-9.0.19</code>和<code>jdk-8u191-linux-x64.tar</code></p><h2 id="2-将两个压缩包传入服务器中"><a href="#2-将两个压缩包传入服务器中" class="headerlink" title="2. 将两个压缩包传入服务器中"></a>2. 将两个压缩包传入服务器中</h2><p>本地可以下载一个叫做：SecureFX的软件来进行上传文件的操作，连接服务器并且上传压缩包至<code>/opt</code>目录下。</p><h2 id="3-解压文件并删除压缩包"><a href="#3-解压文件并删除压缩包" class="headerlink" title="3. 解压文件并删除压缩包"></a>3. 解压文件并删除压缩包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /opt</span><br><span class="line">tar -zxvf apache-tomcat-9.0.19.tar.gz</span><br><span class="line">tar -zxvf jdk-8u191-linux-x64.tar.gz</span><br><span class="line">rm -rf *.tar.gz</span><br></pre></td></tr></table></figure><h2 id="4-配置jdk"><a href="#4-配置jdk" class="headerlink" title="4. 配置jdk"></a>4. 配置jdk</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure><p>进入到最底下，补充以下代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/opt/jdk1.8.0_191</span><br><span class="line">export JRE_HOME=/opt/jdk1.8.0_191/jre</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH</span><br><span class="line">export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH</span><br></pre></td></tr></table></figure><p>再不重启服务器的情况下，让配置文件生效并查看安装的版本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br><span class="line">java -version</span><br></pre></td></tr></table></figure><h2 id="5-打开防火墙对应的端口号-并重新加载防火墙"><a href="#5-打开防火墙对应的端口号-并重新加载防火墙" class="headerlink" title="5. 打开防火墙对应的端口号,并重新加载防火墙"></a>5. 打开防火墙对应的端口号,并重新加载防火墙</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=80/tcp --permanent</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure><h2 id="6-建一个存放项目的文件夹"><a href="#6-建一个存放项目的文件夹" class="headerlink" title="6. 建一个存放项目的文件夹"></a>6. 建一个存放项目的文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt</span><br><span class="line">mkdir www</span><br></pre></td></tr></table></figure><h2 id="7-配置tomcat启动路径"><a href="#7-配置tomcat启动路径" class="headerlink" title="7. 配置tomcat启动路径"></a>7. 配置tomcat启动路径</h2><p>将本地的项目上传到www目录之下，然后</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd apache-tomcat-9.0.19/conf</span><br><span class="line">vim server.xml</span><br></pre></td></tr></table></figure><p>在<code>server.xml</code>中修改端口号<code>8080</code>成<code>80</code>并在最下面的<code></code>前面加入下面代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//以下是我的代码，你们需要自己对应修改</span><br><span class="line">&lt;Context docBase=&quot;/opt/www/h5projects/MHWZ/&quot; path=&quot;/mhwz&quot; reloadable=&quot;false&quot;&lt;/Context&gt;</span><br><span class="line">&lt;Context docBase=&quot;/opt/www/h5projects/ZCOOL/&quot; path=&quot;/zcool&quot; reloadable=&quot;false&quot;&gt;&lt;/Context&gt;</span><br></pre></td></tr></table></figure><h2 id="8-启动tomcat"><a href="#8-启动tomcat" class="headerlink" title="8. 启动tomcat"></a>8. 启动tomcat</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ../bin</span><br><span class="line">./startup.sh &amp;&amp; tail -f ../logs/catalina.out//启动tomcat并查看日志</span><br></pre></td></tr></table></figure><h2 id="9-运行项目"><a href="#9-运行项目" class="headerlink" title="9. 运行项目"></a>9. 运行项目</h2><p>因为端口设置成<code>80</code>所以直接在浏览器中输入ip/你设置的项目的虚拟路径/主页，就成功了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip/mhwz/mhwz.html</span><br></pre></td></tr></table></figure><h2 id="10-附上一些常用代码"><a href="#10-附上一些常用代码" class="headerlink" title="10 .附上一些常用代码"></a>10 .附上一些常用代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep tomcat//查询进程</span><br><span class="line">kill -9 1060//彻底关闭tomcat，这个1060是查询出来的进程</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -38,7 +65,7 @@
       <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Linux云服务器 tomcat" scheme="http://yoursite.com/tags/Linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8-tomcat/"/>
+      <category term="linux云服务器 tomcat" scheme="http://yoursite.com/tags/linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8-tomcat/"/>
     
   </entry>
   
@@ -95,6 +122,31 @@
   </entry>
   
   <entry>
+    <title>搭建gitlab服务器</title>
+    <link href="http://yoursite.com/2019/05/13/%E6%90%AD%E5%BB%BAgitlab%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://yoursite.com/2019/05/13/搭建gitlab服务器/</id>
+    <published>2019-05-12T16:03:06.000Z</published>
+    <updated>2019-05-14T16:47:46.271Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-上传gitlab压缩包"><a href="#1-上传gitlab压缩包" class="headerlink" title="1. 上传gitlab压缩包"></a>1. 上传gitlab压缩包</h2><p>将下载好的<code>gitlab-ce-10.8.2-ce.0.el7.x86_64.rpm</code>上传到linux服务器的<code>/opt</code>上</p><h2 id="2-执行安装"><a href="#2-执行安装" class="headerlink" title="2. 执行安装"></a>2. 执行安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt</span><br><span class="line">vim install.sh</span><br></pre></td></tr></table></figure><p>在install.sh中拷贝下面的代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo rpm -ivh /opt/gitlab-ce-10.8.2-ce.0.el7.x86_64.rpm</span><br><span class="line">sudo yum install -y curl policycoreutils-python openssh-server cronie</span><br><span class="line">sudo lokkit -s http -s ssh</span><br><span class="line">sudo yum install postfix</span><br><span class="line">sudo service postfix start</span><br><span class="line">sudo chkconfig postfix on</span><br><span class="line">curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash</span><br><span class="line">sudo EXTERNAL_URL=&quot;http://gitlab.example.com&quot; yum -y install gitlab-ce</span><br></pre></td></tr></table></figure><p>改一下install.sh的权限，使其可以执行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 755 install.sh</span><br></pre></td></tr></table></figure><h3 id="执行之前为了保险，为linux系统拍摄一个快照"><a href="#执行之前为了保险，为linux系统拍摄一个快照" class="headerlink" title="执行之前为了保险，为linux系统拍摄一个快照"></a>执行之前为了保险，为linux系统拍摄一个快照</h3><p>执行install.sh</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./install.sh</span><br></pre></td></tr></table></figure><p>时间比较长需要等，执行完毕后重启linux</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure><h2 id="3-gitlab服务操作"><a href="#3-gitlab服务操作" class="headerlink" title="3. gitlab服务操作"></a>3. gitlab服务操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl reconfigure//初始化配置 gitlab（时间很久！）</span><br><span class="line">gitlab-ctl start//启动 gitlab 服务</span><br><span class="line">gitlab-ctl stop//停止 gitlab 服务</span><br></pre></td></tr></table></figure><h2 id="4-浏览器访问"><a href="#4-浏览器访问" class="headerlink" title="4. 浏览器访问"></a>4. 浏览器访问</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service firewalld stop //停止防火墙</span><br></pre></td></tr></table></figure><p>访问 Linux 服务器 IP 地址即可，如果想访问 EXTERNAL_URL 指定的域名还需要配置<br>域名服务器或本地 hosts 文件。<br>初次登录时需要为 gitlab 的 root 用户设置密码。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-上传gitlab压缩包&quot;&gt;&lt;a href=&quot;#1-上传gitlab压缩包&quot; class=&quot;headerlink&quot; title=&quot;1. 上传gitlab压缩包&quot;&gt;&lt;/a&gt;1. 上传gitlab压缩包&lt;/h2&gt;&lt;p&gt;将下载好的&lt;code&gt;gitlab-ce-10.
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="gitlab" scheme="http://yoursite.com/tags/gitlab/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搭建一个简易博客</title>
     <link href="http://yoursite.com/2019/05/12/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2019/05/12/搭建一个简易博客/</id>
@@ -117,6 +169,56 @@
     
     
       <category term="简易博客" scheme="http://yoursite.com/tags/%E7%AE%80%E6%98%93%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git和github之间的操作</title>
+    <link href="http://yoursite.com/2019/05/11/git%E5%92%8Cgithub%E4%B9%8B%E9%97%B4%E7%9A%84%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2019/05/11/git和github之间的操作/</id>
+    <published>2019-05-11T15:42:00.000Z</published>
+    <updated>2019-05-14T16:47:28.792Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-注册github账号，并创建远程库"><a href="#1-注册github账号，并创建远程库" class="headerlink" title="1. 注册github账号，并创建远程库"></a>1. 注册github账号，并创建远程库</h2><p>唯一要注意的一点就是绑定邮箱不要用163的，因为有时可能会接收不到github的邮件，这里推荐可以用aliyun的邮箱</p><h2 id="2-创建远程库地址别名"><a href="#2-创建远程库地址别名" class="headerlink" title="2. 创建远程库地址别名"></a>2. 创建远程库地址别名</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote -v //查看当前所有远程地址别名</span><br><span class="line">git remote add [别名] [远程地址]</span><br></pre></td></tr></table></figure><h2 id="3-推送"><a href="#3-推送" class="headerlink" title="3. 推送"></a>3. 推送</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push [别名] [分支名]</span><br></pre></td></tr></table></figure><h2 id="4-克隆"><a href="#4-克隆" class="headerlink" title="4. 克隆"></a>4. 克隆</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git origin [远程地址]</span><br></pre></td></tr></table></figure><h3 id="克隆的效果"><a href="#克隆的效果" class="headerlink" title="克隆的效果"></a>克隆的效果</h3><ol><li>完整的把远程库下载到本地</li><li>创建 origin 远程地址别名</li><li>初始化本地库</li></ol><h2 id="5-拉取"><a href="#5-拉取" class="headerlink" title="5. 拉取"></a>5. 拉取</h2><p>pull=fetch+merge</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch [远程库地址别名] [远程分支名]</span><br><span class="line">git merge [远程库地址别名/远程分支名]</span><br><span class="line">git pull [远程库地址别名] [远程分支名]</span><br></pre></td></tr></table></figure><h2 id="6-SSH登录"><a href="#6-SSH登录" class="headerlink" title="6. SSH登录"></a>6. SSH登录</h2><p>进入当前用户的家目录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~</span><br></pre></td></tr></table></figure><p>删除.ssh 目录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rm -rvf .ssh</span><br></pre></td></tr></table></figure><p>运行命令生成.ssh 密钥目录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C xxxx@aliyun.com</span><br><span class="line">[注意：这里-C 这个参数是大写的 C]</span><br></pre></td></tr></table></figure><p>进入.ssh 目录查看文件列表</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd .ssh</span><br><span class="line">$ ls -lF</span><br></pre></td></tr></table></figure><p>查看 id_rsa.pub 文件内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat id_rsa.pub</span><br></pre></td></tr></table></figure><p>复制 id_rsa.pub 文件内容，登录 GitHub，点击用户头像→Settings→SSH and GPG<br>keys→New SSH Key→输入复制的密钥信息</p><p>回到 Git bash 创建远程地址别名</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin_ssh git@github.com:xxx/xxx.git</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-注册github账号，并创建远程库&quot;&gt;&lt;a href=&quot;#1-注册github账号，并创建远程库&quot; class=&quot;headerlink&quot; title=&quot;1. 注册github账号，并创建远程库&quot;&gt;&lt;/a&gt;1. 注册github账号，并创建远程库&lt;/h2&gt;&lt;p&gt;
+      
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="git &amp; github" scheme="http://yoursite.com/tags/git-github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git的命令行操作</title>
+    <link href="http://yoursite.com/2019/05/10/git%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2019/05/10/git的命令行操作/</id>
+    <published>2019-05-10T15:22:39.000Z</published>
+    <updated>2019-05-14T16:47:22.166Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-本地库初始化"><a href="#1-本地库初始化" class="headerlink" title="1. 本地库初始化"></a>1. 本地库初始化</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add</span><br></pre></td></tr></table></figure><h2 id="2-设置签名"><a href="#2-设置签名" class="headerlink" title="2. 设置签名"></a>2. 设置签名</h2><p>项目级别/仓库级别：仅在当前本地库范围内有效</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name jacob</span><br><span class="line">git config user.email xxxx@163.com</span><br></pre></td></tr></table></figure><p>系统用户级别：登录当前操作系统的用户范围</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name jacob</span><br><span class="line">git config --global xxxx@163.com</span><br></pre></td></tr></table></figure><p>信息保存位置：~/.gitconfig 文件</p><h2 id="3-基本操作"><a href="#3-基本操作" class="headerlink" title="3. 基本操作"></a>3. 基本操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git status//查看工作区、暂存区状态</span><br><span class="line">git add [file name]//将工作区的“新建/修改”添加到暂存区</span><br><span class="line">git commit -m &quot;commit message&quot; [file name]//将暂存区的内容提交到本地库</span><br><span class="line">git reflog//查看历史记录，多屏显示控制方式：空格向下翻页，b 向上翻页，q 退出</span><br></pre></td></tr></table></figure><h2 id="4-前进和后退版本"><a href="#4-前进和后退版本" class="headerlink" title="4. 前进和后退版本"></a>4. 前进和后退版本</h2><p>基于索引值操作[推荐]</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard a6ace91</span><br></pre></td></tr></table></figure><h2 id="5-比较文件差异"><a href="#5-比较文件差异" class="headerlink" title="5. 比较文件差异"></a>5. 比较文件差异</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git diff [文件名]//将工作区中的文件和暂存区进行比较</span><br><span class="line">git diff [本地库中历史版本] [文件名]//将工作区中的文件和本地库历史记录比较</span><br></pre></td></tr></table></figure><h2 id="6-分支操作"><a href="#6-分支操作" class="headerlink" title="6. 分支操作"></a>6. 分支操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git branch [分支名]//git branch [分支名]</span><br><span class="line">git branch -v//查看分支</span><br><span class="line">git checkout [分支名]//切换分支</span><br><span class="line">git checkout [被合并分支名]//合并分支第一步：切换到接受修改的分支（被合并，增加新内容）上</span><br><span class="line">git merge [有新内容分支名]//第二步执行 merge 命令</span><br></pre></td></tr></table></figure><h2 id="7-解决冲突"><a href="#7-解决冲突" class="headerlink" title="7. 解决冲突"></a>7. 解决冲突</h2><ol><li>编辑文件，删除特殊符号</li><li>把文件修改到满意的程度，保存退出</li><li>git add [文件名]</li><li>git commit -m “日志信息”    （注意：此时 commit 一定不能带具体文件名）</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-本地库初始化&quot;&gt;&lt;a href=&quot;#1-本地库初始化&quot; class=&quot;headerlink&quot; title=&quot;1. 本地库初始化&quot;&gt;&lt;/a&gt;1. 本地库初始化&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td 
+      
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
     
   </entry>
   
