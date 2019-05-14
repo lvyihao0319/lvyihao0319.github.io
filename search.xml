@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[我的第一篇博客文章]]></title>
-    <url>%2F2019%2F05%2F12%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%2F</url>
-    <content type="text"><![CDATA[第一章内容 第二章内容 参考文献wwwwwwww]]></content>
+    <title><![CDATA[jdk下载账号]]></title>
+    <url>%2F2019%2F05%2F14%2Fjdk%E4%B8%8B%E8%BD%BD%E8%B4%A6%E5%8F%B7%2F</url>
+    <content type="text"><![CDATA[目前在官网下载低于jdk1.8的java jdk的时候需要登陆，从网上收藏了这个账号可以下载用 122696671285@qq.com 密码：Oracle123]]></content>
+      <categories>
+        <category>账号</category>
+      </categories>
+      <tags>
+        <tag>jdk</tag>
+      </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo的基本使用方法]]></title>
-    <url>%2F2019%2F05%2F12%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[欢迎来到 Hexo! 快速开始新建一篇新日志1$ hexo new "My New Post" 更多信息: Writing 启动服务1$ hexo server 更多信息: Server 生成静态文件1$ hexo generate 更多信息: Generating 部署到远程站点1$ hexo deploy 更多信息: Deployment]]></content>
+    <title><![CDATA[基于Hexo-Next主题博客的美化]]></title>
+    <url>%2F2019%2F05%2F14%2F%E5%9F%BA%E4%BA%8EHexo-Next%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BE%8E%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[本文将介绍如何去美化一个基于Next主题的博客！ 1. 基础设置1.1 设置站点名、作者昵称和站点描述打开根目录下的config.yml12345678# Sitetitle: Jacob&apos;s Notessubtitle: Quick notesdescription: 胡编一通，乱写一气keywords: 胡编一通，乱写一气author: Jacoblanguage: zh-CNtimezone: 1.2 NexT主题的安装博客所在目录下打开：git bash1git clone https://github.com/theme-next/hexo-theme-next themes/next 1.3 启用主题打开根目录下的：_config.yml1theme: next 2. 主题设定2.1 选择主题打开：themes/next/ 下的：_config.yml,查找scheme，可以看到如下四种不同的风格方案：1234#scheme: Muse#scheme: Mist#scheme: Piscesscheme: Gemini 2.2 设置中文框架默认的语言是英文。前往根目录下的：_config.yml，查找language1language: zh-CN 2.3 设置菜单和对应的页面打开：themes/next/ 下的：_config.yml，查找menu123456789menu: home: / || home #about: /about/ || user tags: /tags/ || tags categories: /categories/ || th archives: /archives/ || archive #schedule: /schedule/ || calendar #sitemap: /sitemap.xml || sitemap #commonweal: /404/ || heartbeat ||之前的值是目标链接，之后的是分类页面的图标1hexo new page &quot;categories&quot; 此时在根目录的source文件夹下会生成一个categories文件，文件中有一个index.md文件，修改内容如下123title: 文章分类date: 2017-12-14 13:05:38type: &quot;categories&quot; 3. 美化3.1 设置头像打开：themes/next/下的：_config.yml，查找avatar1234# Sidebar Avatar# in theme directory(source/images): /images/avatar.gif# in site directory(source/uploads): /uploads/avatar.gifavatar: http://XXXXXXXXX 站点内地址：图放至themes/next/source/images/配置为：avatar: /images/图片名 3.2 背景动画进入theme/next目录，执行命令：1git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest 这时将配置文件_config.yml中1canvas_nest: true 3.3 文章底部标签显示的优化修改：/themes/next/layout/_macro/post.swig，搜索 rel=”tag”&gt;#，将 # 换成 1&lt;code&gt;rel=&quot;tag&quot;&gt;&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt;&lt;/code&gt; 3.4 文章添加阴影、透明效果打开：theme/next/source/css/_custom/custom.styl，添加以下代码123456789// 主页文章添加阴影效果.post &#123; margin-top: 60px; margin-bottom: 60px; padding: 25px; background:rgba(255,255,255,0.9) none repeat scroll !important; -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5); -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);&#125; 3.5 点击侧栏头像回到首页修改：/themes/next/layout/_macro/sidebar.swig，如下代码：12345&lt;a href=&quot;/&quot;&gt; &lt;img class=&quot;site-author-image&quot; itemprop=&quot;image&quot; src=&quot;&#123;&#123; url_for( theme.avatar | default(theme.images + &apos;/avatar.gif&apos;) ) &#125;&#125;&quot; alt=&quot;&#123;&#123; theme.author &#125;&#125;&quot; /&gt;&lt;/a&gt; 3.6 新建文章时，在相同目录下创建同名文件夹（便于图片管理）打开站点配置文件：_config.yml，搜索post_asset_folder字段，设置其值为true,然后安装hexo-asset-image1cnpm install hexo-asset-image --save 此时hexo new “fileName”会在:/source/_posts目录下创建同名的文件夹只需在 .md 文件里使用 ![title]括号（图片名） ，无需路径名就可以插入图片。 3.7 首页显示文章摘要（阅读全文）打开:themes/next/下的:_config.yml，查找excerpt1234auto_excerpt: //自动摘录 enable: true length: 150 //摘录字数read_more_btn: true //显示全文按钮 3.8 给页面添加背景图片打开:theme/next/source/css/_custom/custom.styl，添加以下代码：1234567891011body &#123; /*background: url(/images/blogbk.jpg) no-repeat;*/ /* 背景图垂直、水平均居中 */ background-position: center center; /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */ background-attachment: fixed; /* 让背景图基于容器大小伸缩 */ background-size: cover; /* 设置背景颜色，背景图加载过程中会显示背景色 */ background-color: rgba(0, 0, 0, 0.5);&#125; 3.9 文字背景以及半透明的设置打开:theme/next/source/css/_custom/custom.styl，添加以下代码：12345.content &#123; border-radius: 20px; //文章背景设置圆角 padding: 30px 60px 30px 60px; background:rgba(255, 255, 255, 0.8) none repeat scroll !important;&#125; 3.10 去除NexT主题Markdown分割线渲染效果修改:/source/css/_common/scaffolding/base.styl，注释或删除以下内容：1234567background-image: repeating-linear-gradient( -45deg, white, white 4px, transparent 4px, transparent 8px ); 3.11 图片可点击放大查看，放大后可关闭打开站点配置文件:_config.yml，搜索fancybox字段，设置其值为true进入到:theme/text/文件夹下，打开:git bash1git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox 3.12 博客总访问量统计打开themes/next/下的_config.yml，查找busuanzi12345678busuanzi_count: enable: true total_visitors: true total_visitors_icon: user total_views: true total_views_icon: eye post_views: true post_views_icon: eye 打开:/themes/next/layout/_partials/footer.swig，在最后添加如下内容：12&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt; 本站访问次数：&lt;span class=&quot;busuanzi-value&quot; id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;&lt;/span&gt; 3.13 文章末尾添加版权声明查找主题配置文件:themes/next/_config.yml中的creative_commons12345creative_commons: license: by-nc-sa sidebar: false post: true # 将false改为true即可显示版权信息 language: 3.14 搜索功能安装搜索插件： hexo-generator-searchdb1$ npm install hexo-generator-searchdb --save 安装完成，编辑博客配置文件：_config.yml12345search: path: search.xml field: post format: html limit: 10000 Next 主题自带搜索设置，编辑主题配置文件：_config.yml,找到文件中 Local search 的相关配置，设为 true123# Local searchlocal_search: enable: true 4 hexo 重新部署1234hexo cleanhexo ghexo shexo d]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Next主题美化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[搭建一个简易博客]]></title>
+    <url>%2F2019%2F05%2F12%2F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[本文将介绍如何搭建一个基于Hexo的个人博客！ 1. 本地搭建1.1 下载并安装Node.js和git其中npm会和Node.js一起装进来，不需要单独下载 1.2 安装淘宝镜像cnpmnpm install -g cnpm --registry=https://registry.npm.taobao.org 1.3 安装hexo-clicnpm install -g hexo-cli 1.4 查看hexo是否安装成功hexo -v 找一个合适的位置建一个空文件夹，进入该目录下.. 1.5 初始化一个博客hexo init Linux下在前面加上：sudo 1.6 启动预览博客hexo s 在浏览器输入localhost:4000本地预览博客 1.7 停止预览按住：control+c 1.8 写一篇文章hexo n &quot;我的第一篇文章&quot; 找到生成的.md文件，用各种编辑器就可以写文章 1.9 重新预览博客每次重新预览最好做以下步骤123hexo clean // 清除缓存hexo g //生成本地文件hexo s 2. 云端部署2.1 安装hexo-deployer-gitcnpm install --save hexo-deployer-git 2.2 配置_config.yml1234deploy: type: git repo: https://github.com/yourname/yourname.github.io.git branch: master 注意冒号后面要加空格 2.3 部署到github1hexo d 3. 总结至此一个简易的、基础的博客搭建完成！]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>简易博客</tag>
+      </tags>
   </entry>
 </search>
