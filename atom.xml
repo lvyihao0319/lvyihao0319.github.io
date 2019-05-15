@@ -5,9 +5,9 @@
   <subtitle>Quick notes</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://lvyihao0319.github.io/"/>
   <updated>2019-05-15T15:57:34.012Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://lvyihao0319.github.io/</id>
   
   <author>
     <name>Jacob</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Vuex和Redux管理状态的机制</title>
-    <link href="http://yoursite.com/2019/05/15/Vuex%E5%92%8CRedux%E7%AE%A1%E7%90%86%E7%8A%B6%E6%80%81%E7%9A%84%E6%9C%BA%E5%88%B6/"/>
-    <id>http://yoursite.com/2019/05/15/Vuex和Redux管理状态的机制/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/15/Vuex%E5%92%8CRedux%E7%AE%A1%E7%90%86%E7%8A%B6%E6%80%81%E7%9A%84%E6%9C%BA%E5%88%B6/"/>
+    <id>https://lvyihao0319.github.io/2019/05/15/Vuex和Redux管理状态的机制/</id>
     <published>2019-05-15T15:24:04.000Z</published>
     <updated>2019-05-15T15:57:34.012Z</updated>
     
@@ -36,17 +36,17 @@
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://lvyihao0319.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="Vuex&amp;Redux" scheme="http://yoursite.com/tags/Vuex-Redux/"/>
+      <category term="Vuex&amp;Redux" scheme="https://lvyihao0319.github.io/tags/Vuex-Redux/"/>
     
   </entry>
   
   <entry>
     <title>Vue的MVVM实现原理</title>
-    <link href="http://yoursite.com/2019/05/15/Vue%E7%9A%84MVVM%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/"/>
-    <id>http://yoursite.com/2019/05/15/Vue的MVVM实现原理/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/15/Vue%E7%9A%84MVVM%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/"/>
+    <id>https://lvyihao0319.github.io/2019/05/15/Vue的MVVM实现原理/</id>
     <published>2019-05-15T15:09:17.000Z</published>
     <updated>2019-05-15T15:21:02.149Z</updated>
     
@@ -61,17 +61,17 @@
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://lvyihao0319.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="Vue" scheme="http://yoursite.com/tags/Vue/"/>
+      <category term="Vue" scheme="https://lvyihao0319.github.io/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>比较React与Vue</title>
-    <link href="http://yoursite.com/2019/05/15/%E6%AF%94%E8%BE%83React%E4%B8%8EVue/"/>
-    <id>http://yoursite.com/2019/05/15/比较React与Vue/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/15/%E6%AF%94%E8%BE%83React%E4%B8%8EVue/"/>
+    <id>https://lvyihao0319.github.io/2019/05/15/比较React与Vue/</id>
     <published>2019-05-15T14:30:25.000Z</published>
     <updated>2019-05-15T15:01:07.313Z</updated>
     
@@ -89,17 +89,17 @@
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://lvyihao0319.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="React&amp;Vue" scheme="http://yoursite.com/tags/React-Vue/"/>
+      <category term="React&amp;Vue" scheme="https://lvyihao0319.github.io/tags/React-Vue/"/>
     
   </entry>
   
   <entry>
     <title>跨域</title>
-    <link href="http://yoursite.com/2019/05/15/%E8%B7%A8%E5%9F%9F/"/>
-    <id>http://yoursite.com/2019/05/15/跨域/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/15/%E8%B7%A8%E5%9F%9F/"/>
+    <id>https://lvyihao0319.github.io/2019/05/15/跨域/</id>
     <published>2019-05-15T13:50:20.000Z</published>
     <updated>2019-05-15T14:12:40.368Z</updated>
     
@@ -116,17 +116,17 @@
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://lvyihao0319.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="跨域" scheme="http://yoursite.com/tags/%E8%B7%A8%E5%9F%9F/"/>
+      <category term="跨域" scheme="https://lvyihao0319.github.io/tags/%E8%B7%A8%E5%9F%9F/"/>
     
   </entry>
   
   <entry>
     <title>函数节流和函数防抖</title>
-    <link href="http://yoursite.com/2019/05/15/%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%E5%92%8C%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96/"/>
-    <id>http://yoursite.com/2019/05/15/函数节流和函数防抖/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/15/%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%E5%92%8C%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96/"/>
+    <id>https://lvyihao0319.github.io/2019/05/15/函数节流和函数防抖/</id>
     <published>2019-05-15T12:48:40.000Z</published>
     <updated>2019-05-15T14:05:03.441Z</updated>
     
@@ -141,17 +141,17 @@
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://lvyihao0319.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
+      <category term="函数" scheme="https://lvyihao0319.github.io/tags/%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
   <entry>
     <title>如何在Hexo的next主题添加gitalk评论功能</title>
-    <link href="http://yoursite.com/2019/05/15/%E5%A6%82%E4%BD%95%E5%9C%A8Hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
-    <id>http://yoursite.com/2019/05/15/如何在Hexo的next主题添加gitalk评论功能/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/15/%E5%A6%82%E4%BD%95%E5%9C%A8Hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0gitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
+    <id>https://lvyihao0319.github.io/2019/05/15/如何在Hexo的next主题添加gitalk评论功能/</id>
     <published>2019-05-15T08:52:58.000Z</published>
     <updated>2019-05-15T09:25:52.771Z</updated>
     
@@ -167,17 +167,17 @@
     
     </summary>
     
-      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://lvyihao0319.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="gitalk" scheme="http://yoursite.com/tags/gitalk/"/>
+      <category term="gitalk" scheme="https://lvyihao0319.github.io/tags/gitalk/"/>
     
   </entry>
   
   <entry>
     <title>基于Hexo-Next主题博客的美化</title>
-    <link href="http://yoursite.com/2019/05/14/%E5%9F%BA%E4%BA%8EHexo-Next%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BE%8E%E5%8C%96/"/>
-    <id>http://yoursite.com/2019/05/14/基于Hexo-Next主题博客的美化/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/14/%E5%9F%BA%E4%BA%8EHexo-Next%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BE%8E%E5%8C%96/"/>
+    <id>https://lvyihao0319.github.io/2019/05/14/基于Hexo-Next主题博客的美化/</id>
     <published>2019-05-14T08:39:00.000Z</published>
     <updated>2019-05-15T04:19:02.841Z</updated>
     
@@ -193,17 +193,17 @@
     
     </summary>
     
-      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://lvyihao0319.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Next主题美化" scheme="http://yoursite.com/tags/Next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
+      <category term="Next主题美化" scheme="https://lvyihao0319.github.io/tags/Next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>在Linux云服务器上配置Tomcat</title>
-    <link href="http://yoursite.com/2019/05/13/%E5%9C%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AETomcat/"/>
-    <id>http://yoursite.com/2019/05/13/在云服务器上配置Tomcat/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/13/%E5%9C%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AETomcat/"/>
+    <id>https://lvyihao0319.github.io/2019/05/13/在云服务器上配置Tomcat/</id>
     <published>2019-05-13T14:00:29.000Z</published>
     <updated>2019-05-15T02:51:18.915Z</updated>
     
@@ -219,17 +219,17 @@
     
     </summary>
     
-      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://lvyihao0319.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="linux云服务器 tomcat" scheme="http://yoursite.com/tags/linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8-tomcat/"/>
+      <category term="linux云服务器 tomcat" scheme="https://lvyihao0319.github.io/tags/linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8-tomcat/"/>
     
   </entry>
   
   <entry>
     <title>jdk下载账号</title>
-    <link href="http://yoursite.com/2019/05/13/jdk%E4%B8%8B%E8%BD%BD%E8%B4%A6%E5%8F%B7/"/>
-    <id>http://yoursite.com/2019/05/13/jdk下载账号/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/13/jdk%E4%B8%8B%E8%BD%BD%E8%B4%A6%E5%8F%B7/"/>
+    <id>https://lvyihao0319.github.io/2019/05/13/jdk下载账号/</id>
     <published>2019-05-13T07:31:00.000Z</published>
     <updated>2019-05-15T02:52:01.445Z</updated>
     
@@ -245,17 +245,17 @@
     
     </summary>
     
-      <category term="账号" scheme="http://yoursite.com/categories/%E8%B4%A6%E5%8F%B7/"/>
+      <category term="账号" scheme="https://lvyihao0319.github.io/categories/%E8%B4%A6%E5%8F%B7/"/>
     
     
-      <category term="jdk" scheme="http://yoursite.com/tags/jdk/"/>
+      <category term="jdk" scheme="https://lvyihao0319.github.io/tags/jdk/"/>
     
   </entry>
   
   <entry>
     <title>搭建gitlab服务器</title>
-    <link href="http://yoursite.com/2019/05/12/%E6%90%AD%E5%BB%BAgitlab%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>http://yoursite.com/2019/05/12/搭建gitlab服务器/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/12/%E6%90%AD%E5%BB%BAgitlab%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>https://lvyihao0319.github.io/2019/05/12/搭建gitlab服务器/</id>
     <published>2019-05-12T04:03:06.000Z</published>
     <updated>2019-05-15T02:53:56.787Z</updated>
     
@@ -270,17 +270,17 @@
     
     </summary>
     
-      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://lvyihao0319.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="gitlab" scheme="http://yoursite.com/tags/gitlab/"/>
+      <category term="gitlab" scheme="https://lvyihao0319.github.io/tags/gitlab/"/>
     
   </entry>
   
   <entry>
     <title>安装本地的Linux的CentOS7</title>
-    <link href="http://yoursite.com/2019/05/12/%E5%AE%89%E8%A3%85%E6%9C%AC%E5%9C%B0%E7%9A%84Linux%E7%9A%84CentOS7/"/>
-    <id>http://yoursite.com/2019/05/12/安装本地的Linux的CentOS7/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/12/%E5%AE%89%E8%A3%85%E6%9C%AC%E5%9C%B0%E7%9A%84Linux%E7%9A%84CentOS7/"/>
+    <id>https://lvyihao0319.github.io/2019/05/12/安装本地的Linux的CentOS7/</id>
     <published>2019-05-11T16:02:29.000Z</published>
     <updated>2019-05-15T02:53:08.432Z</updated>
     
@@ -297,17 +297,17 @@
     
     </summary>
     
-      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://lvyihao0319.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+      <category term="linux" scheme="https://lvyihao0319.github.io/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>搭建一个简易博客</title>
-    <link href="http://yoursite.com/2019/05/11/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2019/05/11/搭建一个简易博客/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/11/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://lvyihao0319.github.io/2019/05/11/搭建一个简易博客/</id>
     <published>2019-05-11T11:48:00.000Z</published>
     <updated>2019-05-15T02:54:47.319Z</updated>
     
@@ -323,17 +323,17 @@
     
     </summary>
     
-      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://lvyihao0319.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="简易博客" scheme="http://yoursite.com/tags/%E7%AE%80%E6%98%93%E5%8D%9A%E5%AE%A2/"/>
+      <category term="简易博客" scheme="https://lvyihao0319.github.io/tags/%E7%AE%80%E6%98%93%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>git和github之间的操作</title>
-    <link href="http://yoursite.com/2019/05/10/git%E5%92%8Cgithub%E4%B9%8B%E9%97%B4%E7%9A%84%E6%93%8D%E4%BD%9C/"/>
-    <id>http://yoursite.com/2019/05/10/git和github之间的操作/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/10/git%E5%92%8Cgithub%E4%B9%8B%E9%97%B4%E7%9A%84%E6%93%8D%E4%BD%9C/"/>
+    <id>https://lvyihao0319.github.io/2019/05/10/git和github之间的操作/</id>
     <published>2019-05-10T15:42:00.000Z</published>
     <updated>2019-05-15T02:55:10.591Z</updated>
     
@@ -348,17 +348,17 @@
     
     </summary>
     
-      <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://lvyihao0319.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="git &amp; github" scheme="http://yoursite.com/tags/git-github/"/>
+      <category term="git &amp; github" scheme="https://lvyihao0319.github.io/tags/git-github/"/>
     
   </entry>
   
   <entry>
     <title>git的命令行操作</title>
-    <link href="http://yoursite.com/2019/05/10/git%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/"/>
-    <id>http://yoursite.com/2019/05/10/git的命令行操作/</id>
+    <link href="https://lvyihao0319.github.io/2019/05/10/git%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/"/>
+    <id>https://lvyihao0319.github.io/2019/05/10/git的命令行操作/</id>
     <published>2019-05-10T01:22:39.000Z</published>
     <updated>2019-05-15T02:55:34.016Z</updated>
     
@@ -373,10 +373,10 @@
     
     </summary>
     
-      <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://lvyihao0319.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+      <category term="git" scheme="https://lvyihao0319.github.io/tags/git/"/>
     
   </entry>
   
