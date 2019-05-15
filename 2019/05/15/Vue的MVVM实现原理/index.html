@@ -100,17 +100,20 @@
 
 
 
-  <meta name="description" content="胡编一通，乱写一气">
-<meta name="keywords" content="胡编一通，乱写一气">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jacob&#39;s Notes">
-<meta property="og:url" content="http://yoursite.com/tags/跨域/index.html">
+  <meta name="description" content="1. Vue作为MVVM模式的实现库的2种技术1.1 模板解析：实现初始化显示 解析大括号表达式 解析指令  1.2 数据绑定：实现更新显示 通过数据劫持实现  2 原理结构图">
+<meta name="keywords" content="Vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue的MVVM实现原理">
+<meta property="og:url" content="http://yoursite.com/2019/05/15/Vue的MVVM实现原理/index.html">
 <meta property="og:site_name" content="Jacob&#39;s Notes">
-<meta property="og:description" content="胡编一通，乱写一气">
+<meta property="og:description" content="1. Vue作为MVVM模式的实现库的2种技术1.1 模板解析：实现初始化显示 解析大括号表达式 解析指令  1.2 数据绑定：实现更新显示 通过数据劫持实现  2 原理结构图">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/05/15/Vue的MVVM实现原理/原理结构图.png">
+<meta property="og:updated_time" content="2019-05-15T15:21:02.149Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jacob&#39;s Notes">
-<meta name="twitter:description" content="胡编一通，乱写一气">
+<meta name="twitter:title" content="Vue的MVVM实现原理">
+<meta name="twitter:description" content="1. Vue作为MVVM模式的实现库的2种技术1.1 模板解析：实现初始化显示 解析大括号表达式 解析指令  1.2 数据绑定：实现更新显示 通过数据劫持实现  2 原理结构图">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/15/Vue的MVVM实现原理/原理结构图.png">
 
 
 
@@ -120,7 +123,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/tags/跨域/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/15/Vue的MVVM实现原理/">
 
 
 
@@ -130,7 +133,7 @@
   };
 </script>
 
-  <title>标签: 跨域 | Jacob's Notes</title>
+  <title>Vue的MVVM实现原理 | Jacob's Notes</title>
   
 
 
@@ -178,7 +181,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,7 +240,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -342,80 +345,271 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>跨域<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/15/Vue的MVVM实现原理/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jacob">
+      <meta itemprop="description" content="胡编一通，乱写一气">
+      <meta itemprop="image" content="/images/lyh.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jacob's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2019/05/15/跨域/" itemprop="url">
-            
-              <span itemprop="name">跨域</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Vue的MVVM实现原理
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-15T21:50:20+08:00" content="2019-05-15">
-          05-15
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-15 23:09:17 / 修改时间：23:21:02" itemprop="dateCreated datePublished" datetime="2019-05-15T23:09:17+08:00">2019-05-15</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/随笔/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="1-Vue作为MVVM模式的实现库的2种技术"><a href="#1-Vue作为MVVM模式的实现库的2种技术" class="headerlink" title="1. Vue作为MVVM模式的实现库的2种技术"></a>1. Vue作为MVVM模式的实现库的2种技术</h2><h3 id="1-1-模板解析：实现初始化显示"><a href="#1-1-模板解析：实现初始化显示" class="headerlink" title="1.1 模板解析：实现初始化显示"></a>1.1 模板解析：实现初始化显示</h3><ul>
+<li>解析大括号表达式</li>
+<li>解析指令</li>
+</ul>
+<h3 id="1-2-数据绑定：实现更新显示"><a href="#1-2-数据绑定：实现更新显示" class="headerlink" title="1.2 数据绑定：实现更新显示"></a>1.2 数据绑定：实现更新显示</h3><ul>
+<li>通过数据劫持实现</li>
+</ul>
+<h2 id="2-原理结构图"><a href="#2-原理结构图" class="headerlink" title="2 原理结构图"></a>2 原理结构图</h2><p><img src="/2019/05/15/Vue的MVVM实现原理/原理结构图.png" alt="原理结构图"></p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Jacob 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="Jacob 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Jacob</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://yoursite.com/2019/05/15/Vue的MVVM实现原理/" title="Vue的MVVM实现原理">http://yoursite.com/2019/05/15/Vue的MVVM实现原理/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Vue/" rel="tag"><i class="fa fa-tag"></i> Vue</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/15/比较React与Vue/" rel="next" title="比较React与Vue">
+                <i class="fa fa-chevron-left"></i> 比较React与Vue
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
         </div>
         
           
@@ -434,8 +628,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -582,6 +785,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Vue作为MVVM模式的实现库的2种技术"><span class="nav-text">1. Vue作为MVVM模式的实现库的2种技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-模板解析：实现初始化显示"><span class="nav-text">1.1 模板解析：实现初始化显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-数据绑定：实现更新显示"><span class="nav-text">1.2 数据绑定：实现更新显示</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-原理结构图"><span class="nav-text">2 原理结构图</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -753,6 +973,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
@@ -768,6 +992,37 @@
 
   
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '1825f18946f6cba87ffb',
+    clientSecret: 'cdb68bbff3b4c2081d325db33637af5cce4ced85',
+    repo: 'lvyihao0319.github.io',
+    owner: 'lvyihao0319',
+    admin: ['lvyihao0319'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
 
 
   
