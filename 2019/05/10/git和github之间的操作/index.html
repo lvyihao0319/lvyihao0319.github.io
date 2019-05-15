@@ -100,18 +100,18 @@
 
 
 
-  <meta name="description" content="本文将介绍如何在Linux云服务器上或者Linux本地服务器上部署Tomcat环境！ 1. 事先准备在部署之前，提前从官网上下载好对应的tomcat和jdk，jdk1.8之前的下载需要账号密码，在我的上一篇文章里有可以使用。 这里特别提醒一下：由于是在linux系统上部署，tomcat需要下载以.tar.gz结尾的压缩包，可以为后续节省很多麻烦，jdk则要下载Linux64位的。 我使用的是apa">
-<meta name="keywords" content="linux云服务器 tomcat">
+  <meta name="description" content="1. 注册github账号，并创建远程库唯一要注意的一点就是绑定邮箱不要用163的，因为有时可能会接收不到github的邮件，这里推荐可以用aliyun的邮箱 2. 创建远程库地址别名12git remote -v //查看当前所有远程地址别名git remote add [别名] [远程地址] 3. 推送1git push [别名] [分支名] 4. 克隆1git origin [远程地址] 克">
+<meta name="keywords" content="git &amp; github">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在Linux云服务器上配置Tomcat">
-<meta property="og:url" content="http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/index.html">
+<meta property="og:title" content="git和github之间的操作">
+<meta property="og:url" content="http://yoursite.com/2019/05/10/git和github之间的操作/index.html">
 <meta property="og:site_name" content="Jacob&#39;s Notes">
-<meta property="og:description" content="本文将介绍如何在Linux云服务器上或者Linux本地服务器上部署Tomcat环境！ 1. 事先准备在部署之前，提前从官网上下载好对应的tomcat和jdk，jdk1.8之前的下载需要账号密码，在我的上一篇文章里有可以使用。 这里特别提醒一下：由于是在linux系统上部署，tomcat需要下载以.tar.gz结尾的压缩包，可以为后续节省很多麻烦，jdk则要下载Linux64位的。 我使用的是apa">
+<meta property="og:description" content="1. 注册github账号，并创建远程库唯一要注意的一点就是绑定邮箱不要用163的，因为有时可能会接收不到github的邮件，这里推荐可以用aliyun的邮箱 2. 创建远程库地址别名12git remote -v //查看当前所有远程地址别名git remote add [别名] [远程地址] 3. 推送1git push [别名] [分支名] 4. 克隆1git origin [远程地址] 克">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-14T16:03:48.629Z">
+<meta property="og:updated_time" content="2019-05-15T02:55:10.591Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在Linux云服务器上配置Tomcat">
-<meta name="twitter:description" content="本文将介绍如何在Linux云服务器上或者Linux本地服务器上部署Tomcat环境！ 1. 事先准备在部署之前，提前从官网上下载好对应的tomcat和jdk，jdk1.8之前的下载需要账号密码，在我的上一篇文章里有可以使用。 这里特别提醒一下：由于是在linux系统上部署，tomcat需要下载以.tar.gz结尾的压缩包，可以为后续节省很多麻烦，jdk则要下载Linux64位的。 我使用的是apa">
+<meta name="twitter:title" content="git和github之间的操作">
+<meta name="twitter:description" content="1. 注册github账号，并创建远程库唯一要注意的一点就是绑定邮箱不要用163的，因为有时可能会接收不到github的邮件，这里推荐可以用aliyun的邮箱 2. 创建远程库地址别名12git remote -v //查看当前所有远程地址别名git remote add [别名] [远程地址] 3. 推送1git push [别名] [分支名] 4. 克隆1git origin [远程地址] 克">
 
 
 
@@ -121,7 +121,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/10/git和github之间的操作/">
 
 
 
@@ -131,7 +131,7 @@
   };
 </script>
 
-  <title>在Linux云服务器上配置Tomcat | Jacob's Notes</title>
+  <title>git和github之间的操作 | Jacob's Notes</title>
   
 
 
@@ -363,7 +363,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/10/git和github之间的操作/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jacob">
@@ -380,7 +380,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">在Linux云服务器上配置Tomcat
+          <h1 class="post-title" itemprop="name headline">git和github之间的操作
 
               
             
@@ -406,7 +406,7 @@
                 
               
 
-              <time title="创建时间：2019-05-14 22:00:29" itemprop="dateCreated datePublished" datetime="2019-05-14T22:00:29+08:00">2019-05-14</time>
+              <time title="创建时间：2019-05-10 23:42:00" itemprop="dateCreated datePublished" datetime="2019-05-10T23:42:00+08:00">2019-05-10</time>
             
 
             
@@ -423,7 +423,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-15 00:03:48" itemprop="dateModified" datetime="2019-05-15T00:03:48+08:00">2019-05-15</time>
+                <time title="修改时间：2019-05-15 10:55:10" itemprop="dateModified" datetime="2019-05-15T10:55:10+08:00">2019-05-15</time>
               
             
           </span>
@@ -440,7 +440,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/教程/" itemprop="url" rel="index"><span itemprop="name">教程</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/笔记/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a></span>
 
                 
                 
@@ -450,6 +450,19 @@
 
           
             
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/05/10/git和github之间的操作/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/05/10/git和github之间的操作/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -482,27 +495,31 @@
       
 
       
-        <p>本文将介绍如何在Linux云服务器上或者Linux本地服务器上部署Tomcat环境！</p>
-<h2 id="1-事先准备"><a href="#1-事先准备" class="headerlink" title="1. 事先准备"></a>1. 事先准备</h2><p>在部署之前，提前从官网上下载好对应的tomcat和jdk，jdk1.8之前的下载需要账号密码，在我的上一篇文章里有可以使用。</p>
-<p>这里特别提醒一下：由于是在linux系统上部署，tomcat需要下载以<code>.tar.gz</code>结尾的压缩包，可以为后续节省很多麻烦，jdk则要下载Linux64位的。</p>
-<p>我使用的是<code>apache-tomcat-9.0.19</code>和<code>jdk-8u191-linux-x64.tar</code></p>
-<h2 id="2-将两个压缩包传入服务器中"><a href="#2-将两个压缩包传入服务器中" class="headerlink" title="2. 将两个压缩包传入服务器中"></a>2. 将两个压缩包传入服务器中</h2><p>本地可以下载一个叫做：SecureFX的软件来进行上传文件的操作，连接服务器并且上传压缩包至<code>/opt</code>目录下。</p>
-<h2 id="3-解压文件并删除压缩包"><a href="#3-解压文件并删除压缩包" class="headerlink" title="3. 解压文件并删除压缩包"></a>3. 解压文件并删除压缩包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /opt</span><br><span class="line">tar -zxvf apache-tomcat-9.0.19.tar.gz</span><br><span class="line">tar -zxvf jdk-8u191-linux-x64.tar.gz</span><br><span class="line">rm -rf *.tar.gz</span><br></pre></td></tr></table></figure>
-<h2 id="4-配置jdk"><a href="#4-配置jdk" class="headerlink" title="4. 配置jdk"></a>4. 配置jdk</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
-<p>进入到最底下，补充以下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/opt/jdk1.8.0_191</span><br><span class="line">export JRE_HOME=/opt/jdk1.8.0_191/jre</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH</span><br><span class="line">export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH</span><br></pre></td></tr></table></figure>
-<p>再不重启服务器的情况下，让配置文件生效并查看安装的版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br><span class="line">java -version</span><br></pre></td></tr></table></figure>
-<h2 id="5-打开防火墙对应的端口号-并重新加载防火墙"><a href="#5-打开防火墙对应的端口号-并重新加载防火墙" class="headerlink" title="5. 打开防火墙对应的端口号,并重新加载防火墙"></a>5. 打开防火墙对应的端口号,并重新加载防火墙</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=80/tcp --permanent</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
-<h2 id="6-建一个存放项目的文件夹"><a href="#6-建一个存放项目的文件夹" class="headerlink" title="6. 建一个存放项目的文件夹"></a>6. 建一个存放项目的文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt</span><br><span class="line">mkdir www</span><br></pre></td></tr></table></figure>
-<h2 id="7-配置tomcat启动路径"><a href="#7-配置tomcat启动路径" class="headerlink" title="7. 配置tomcat启动路径"></a>7. 配置tomcat启动路径</h2><p>将本地的项目上传到www目录之下，然后</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd apache-tomcat-9.0.19/conf</span><br><span class="line">vim server.xml</span><br></pre></td></tr></table></figure>
-<p>在<code>server.xml</code>中修改端口号<code>8080</code>成<code>80</code>并在最下面的<code></code>前面加入下面代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//以下是我的代码，你们需要自己对应修改</span><br><span class="line">&lt;Context docBase=&quot;/opt/www/h5projects/MHWZ/&quot; path=&quot;/mhwz&quot; reloadable=&quot;false&quot;&lt;/Context&gt;</span><br><span class="line">&lt;Context docBase=&quot;/opt/www/h5projects/ZCOOL/&quot; path=&quot;/zcool&quot; reloadable=&quot;false&quot;&gt;&lt;/Context&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="8-启动tomcat"><a href="#8-启动tomcat" class="headerlink" title="8. 启动tomcat"></a>8. 启动tomcat</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ../bin</span><br><span class="line">./startup.sh &amp;&amp; tail -f ../logs/catalina.out	//启动tomcat并查看日志</span><br></pre></td></tr></table></figure>
-<h2 id="9-运行项目"><a href="#9-运行项目" class="headerlink" title="9. 运行项目"></a>9. 运行项目</h2><p>因为端口设置成<code>80</code>所以直接在浏览器中输入ip/你设置的项目的虚拟路径/主页，就成功了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip/mhwz/mhwz.html</span><br></pre></td></tr></table></figure>
-<h2 id="10-附上一些常用代码"><a href="#10-附上一些常用代码" class="headerlink" title="10 .附上一些常用代码"></a>10 .附上一些常用代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep tomcat	//查询进程</span><br><span class="line">kill -9 1060	//彻底关闭tomcat，这个1060是查询出来的进程</span><br></pre></td></tr></table></figure>
+        <h2 id="1-注册github账号，并创建远程库"><a href="#1-注册github账号，并创建远程库" class="headerlink" title="1. 注册github账号，并创建远程库"></a>1. 注册github账号，并创建远程库</h2><p>唯一要注意的一点就是绑定邮箱不要用163的，因为有时可能会接收不到github的邮件，这里推荐可以用aliyun的邮箱</p>
+<h2 id="2-创建远程库地址别名"><a href="#2-创建远程库地址别名" class="headerlink" title="2. 创建远程库地址别名"></a>2. 创建远程库地址别名</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote -v //查看当前所有远程地址别名</span><br><span class="line">git remote add [别名] [远程地址]</span><br></pre></td></tr></table></figure>
+<h2 id="3-推送"><a href="#3-推送" class="headerlink" title="3. 推送"></a>3. 推送</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push [别名] [分支名]</span><br></pre></td></tr></table></figure>
+<h2 id="4-克隆"><a href="#4-克隆" class="headerlink" title="4. 克隆"></a>4. 克隆</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git origin [远程地址]</span><br></pre></td></tr></table></figure>
+<h3 id="克隆的效果"><a href="#克隆的效果" class="headerlink" title="克隆的效果"></a>克隆的效果</h3><ol>
+<li>完整的把远程库下载到本地</li>
+<li>创建 origin 远程地址别名</li>
+<li>初始化本地库</li>
+</ol>
+<h2 id="5-拉取"><a href="#5-拉取" class="headerlink" title="5. 拉取"></a>5. 拉取</h2><p>pull=fetch+merge</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch [远程库地址别名] [远程分支名]</span><br><span class="line">git merge [远程库地址别名/远程分支名]</span><br><span class="line">git pull [远程库地址别名] [远程分支名]</span><br></pre></td></tr></table></figure>
+<h2 id="6-SSH登录"><a href="#6-SSH登录" class="headerlink" title="6. SSH登录"></a>6. SSH登录</h2><p>进入当前用户的家目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~</span><br></pre></td></tr></table></figure>
+<p>删除.ssh 目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rm -rvf .ssh</span><br></pre></td></tr></table></figure>
+<p>运行命令生成.ssh 密钥目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C xxxx@aliyun.com</span><br><span class="line">[注意：这里-C 这个参数是大写的 C]</span><br></pre></td></tr></table></figure>
+<p>进入.ssh 目录查看文件列表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd .ssh</span><br><span class="line">$ ls -lF</span><br></pre></td></tr></table></figure>
+<p>查看 id_rsa.pub 文件内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>复制 id_rsa.pub 文件内容，登录 GitHub，点击用户头像→Settings→SSH and GPG<br>keys→New SSH Key→输入复制的密钥信息</p>
+<p>回到 Git bash 创建远程地址别名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin_ssh git@github.com:xxx/xxx.git</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -517,6 +534,39 @@
     
       
     
+    
+      <div>
+        <div id="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Jacob 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="Jacob 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
@@ -536,7 +586,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/" title="在Linux云服务器上配置Tomcat">http://yoursite.com/2019/05/14/在云服务器上配置Tomcat/</a>
+    <a href="http://yoursite.com/2019/05/10/git和github之间的操作/" title="git和github之间的操作">http://yoursite.com/2019/05/10/git和github之间的操作/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -549,7 +599,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/linux云服务器-tomcat/" rel="tag"><i class="fa fa-tag"></i> linux云服务器 tomcat</a>
+            <a href="/tags/git-github/" rel="tag"><i class="fa fa-tag"></i> git & github</a>
           
         </div>
       
@@ -562,8 +612,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/14/jdk下载账号/" rel="next" title="jdk下载账号">
-                <i class="fa fa-chevron-left"></i> jdk下载账号
+              <a href="/2019/05/10/git的命令行操作/" rel="next" title="git的命令行操作">
+                <i class="fa fa-chevron-left"></i> git的命令行操作
               </a>
             
           </div>
@@ -572,8 +622,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/15/安装本地的Linux的CentOS7/" rel="prev" title="安装本地的Linux的CentOS7">
-                安装本地的Linux的CentOS7 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/11/搭建一个简易博客/" rel="prev" title="搭建一个简易博客">
+                搭建一个简易博客 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -597,7 +647,13 @@
           
 
   
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
 
+  
 
 
         </div>
@@ -774,7 +830,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-事先准备"><span class="nav-text">1. 事先准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-将两个压缩包传入服务器中"><span class="nav-text">2. 将两个压缩包传入服务器中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-解压文件并删除压缩包"><span class="nav-text">3. 解压文件并删除压缩包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-配置jdk"><span class="nav-text">4. 配置jdk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-打开防火墙对应的端口号-并重新加载防火墙"><span class="nav-text">5. 打开防火墙对应的端口号,并重新加载防火墙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-建一个存放项目的文件夹"><span class="nav-text">6. 建一个存放项目的文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-配置tomcat启动路径"><span class="nav-text">7. 配置tomcat启动路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-启动tomcat"><span class="nav-text">8. 启动tomcat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-运行项目"><span class="nav-text">9. 运行项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-附上一些常用代码"><span class="nav-text">10 .附上一些常用代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-注册github账号，并创建远程库"><span class="nav-text">1. 注册github账号，并创建远程库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-创建远程库地址别名"><span class="nav-text">2. 创建远程库地址别名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-推送"><span class="nav-text">3. 推送</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-克隆"><span class="nav-text">4. 克隆</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#克隆的效果"><span class="nav-text">克隆的效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-拉取"><span class="nav-text">5. 拉取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-SSH登录"><span class="nav-text">6. SSH登录</span></a></li></ol></div>
             
 
           </div>
@@ -970,6 +1026,40 @@
 
   
 
+
+  
+    <!-- LOCAL: You can save these files to your site and update links -->
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
+<!-- END LOCAL -->
+
+<script>
+  function renderGitment() {
+    var gitment = new Gitmint({
+      id: window.location.pathname,
+      owner: 'lvyihao0319',
+      repo: 'lvyihao0319.github.io',
+      
+        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+      
+      oauth: {
+      
+      
+        client_secret: 'cdb68bbff3b4c2081d325db33637af5cce4ced85',
+      
+        client_id: '1825f18946f6cba87ffb'
+      }
+    });
+    gitment.render('gitment-container');
+  }
+
+  
+    renderGitment();
+  
+</script>
 
   
 
