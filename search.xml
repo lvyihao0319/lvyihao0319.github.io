@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Vuex和Redux管理状态的机制]]></title>
+    <url>%2F2019%2F05%2F15%2FVuex%E5%92%8CRedux%E7%AE%A1%E7%90%86%E7%8A%B6%E6%80%81%E7%9A%84%E6%9C%BA%E5%88%B6%2F</url>
+    <content type="text"><![CDATA[1. 对Vuex基本理解 什么是Vuex？ Vuex是一个专为Vue.js应用程序开发的状态管理的vue插件 Vuex的作用 集中式管理Vue多个组件共享的状态和从后台获取的数据 2. Vuex的工作原理 3. 对Redux基本理解 什么是Redux？ redux是一个独立专门用于做状态管理的JS库，不是React的插件库， 它可以用在react，angular，vue等项目中，但是基本与React配合使用 Redux的作用 集中式管理React多个组件共享的状态和从后台获取的数据 4.Redux的工作原理 5. Redux使用扩展 使用react-redux简化redux的编码 使用redux-thunk实现redux的异步编程 使用Redux DevTools实现chrome种redux的调试]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>Vuex&amp;Redux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Vue的MVVM实现原理]]></title>
     <url>%2F2019%2F05%2F15%2FVue%E7%9A%84MVVM%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%2F</url>
     <content type="text"><![CDATA[1. Vue作为MVVM模式的实现库的2种技术1.1 模板解析：实现初始化显示 解析大括号表达式 解析指令 1.2 数据绑定：实现更新显示 通过数据劫持实现 2 原理结构图]]></content>
