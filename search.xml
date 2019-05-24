@@ -113,7 +113,7 @@
   <entry>
     <title><![CDATA[安装本地的Linux的CentOS7]]></title>
     <url>%2F2019%2F05%2F12%2F%E5%AE%89%E8%A3%85%E6%9C%AC%E5%9C%B0%E7%9A%84Linux%E7%9A%84CentOS7%2F</url>
-    <content type="text"><![CDATA[1. 新建虚拟机 按照默认提示下一步，到处理器的配置选择两个双核的 虚拟机的内存设置为：2048MB 使用NAT 2. 安装系统 选择中文 到了-安装信息摘要-的地方，等一会儿 点击-软件选择- 选中-GNOME桌面-，-传统X Windows系统的兼容性-，-完成- 然后选择-安装位置- 选择-我要配置分区- 点击-完成- 点击-自动创建- 设置root密码 等待安装，并重启 3. 设置ip地址打开终端 1234cd /etc/sysconfig/network-scriptsll|lesssu rootvim ifcfg-ens33 编辑ifcfg-ens33文件 4. 查看是否配置成功，并且ping一下外网12ifconfigping www.baidu.com -c 3 5. windows ping一下linux1ping xxx.xxx.xx.xxx]]></content>
+    <content type="text"><![CDATA[1. 新建虚拟机 按照默认提示下一步，到处理器的配置选择两个双核的 虚拟机的内存设置为：2048MB 使用NAT 2. 安装系统 选择中文 到了-安装信息摘要-的地方，等一会儿 点击-软件选择- 选中-GNOME桌面-，-传统X Windows系统的兼容性-，-完成- 然后选择-安装位置- 选择-我要配置分区- 点击-完成- 点击-自动创建- 设置root密码 等待安装，并重启 3. 设置ip地址打开终端 1234cd /etc/sysconfig/network-scriptsll|lesssu rootvim ifcfg-ens33 编辑ifcfg-ens33文件 4. 查看是否配置成功，并且ping一下外网123service network restartifconfigping www.baidu.com -c 3 5. windows ping一下linux1ping xxx.xxx.xx.xxx]]></content>
       <categories>
         <category>教程</category>
       </categories>
@@ -152,6 +152,17 @@
       </categories>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[云服务器下安装MySql5.6]]></title>
+    <url>%2F2019%2F04%2F23%2F%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E5%AE%89%E8%A3%85MySql5.6%2F</url>
+    <content type="text"><![CDATA[云服务器上安装MySQL5.6使用root账户，通过Xshell5远程登录阿里云服务器。下载rpm包，并安装，执行命令： 1rpm -Uvh http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm 执行命令,查看当前可用的mysql安装资源。1yum repolist enabled | grep &quot;mysql.*-community.*&quot; 执行命令：1yum -y install mysql-community-server 设置开机启动Mysql1systemctl enable mysqld 执行命令1systemctl list-unit-files | grep mysqld 如果显示以下内容说明已经完成自动启动安装。1mysqld.service enabled 执行命令,启动mysql服务1systemctl start mysqld 查看mysql服务是否已启动1ps -ef|grep mysql查看mysql 执行命令，进行Mysql配置，比如，设置root用户密码1mysql_secure_installation 1234Remove anonymous users? [Y/n] y [删除匿名用户]Disallow root login remotely? [Y/n] y [禁止root远程登录] Remove test database and access to it? [Y/n] y [删除test数据库]Reload privilege tables now? [Y/n] y [刷新权限] 登陆MySql，输入用户名和密码1mysql -uroot -p 修改当前用户密码1update user set password=password(&quot;你的新密码&quot;) where user=&quot;root&quot;; 开启远程登录，授权root远程登录1GRANT ALL PRIVILEGES ON *.* TO &apos;root&apos;@&apos;%&apos; IDENTIFIED BY &apos;你的密码&apos; WITH GRANT OPTION; 刷新权限，命令立即执行生效1flush privileges； 常用命令12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849//通过yum安装Mysql,会自动处理Mysql与其他组件的依赖关系yum install mysql-community-server //测试Mysql是否成功安装mysql//查看Mysql相关文件find / -name mysql//查看Mysql版本yum repolist all | grep mysql//查看当前启动的Mysql版本yum repolist enabled | grep mysql//检查并且显示Mysql相关安装包rpm -qa | grep mysql //查看Mysql安装目录whereis mysql//删除Mysqlyum remove -y mysql mysql mysql-server mysql-libs compat-mysql51 或rpm -e mysql-community-libs-5.7.20-1.el7.x86_64 --nodeps或yum -y remove mysql-community-libs-5.7.20-1.el7.x86_64//启动Mysqlsystemctl start mysqld//重启Mysqlservice mysqld restart//关闭Mysqlsystemctl stop mysqld//查看Mysql服务状态systemctl status mysqld//查看所有数据库show databases;//查看所有表show tables;//查看所有数据库用户SELECT DISTINCT CONCAT(&apos;User: &apos;&apos;&apos;,user,&apos;&apos;&apos;@&apos;&apos;&apos;,host,&apos;&apos;&apos;;&apos;) AS query FROM mysql.user;//退出登录数据库exit;]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
